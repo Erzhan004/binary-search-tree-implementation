@@ -18,15 +18,20 @@ The BST class contains the following methods:
 
 The put method inserts a key-value pair into the BST. It takes a key and a value as parameters and recursively 
 searches for the appropriate position to insert the new node based on the key's value.
+
 The getKey method retrieves the value associated with the given key from the BST. It takes a key as a parameter
 and recursively searches for the node with the matching key, returning its value.
+
 The delete method deletes a node with the given key from the BST. It takes a key as a parameter and recursively 
 searches for the node to delete. The deletion process handles different cases based on the node's position in 
 the tree and the number of children it has.
+
 The minKey method finds the minimum key in a given subtree. It takes a Node as a parameter and traverses to the
 leftmost node to find the minimum key value.
+
 The iterator method returns an iterator to traverse the elements of the tree in ascending order. It creates an 
 instance of the BSTIterator class and passes the root node to it.
+
 The BSTIterator class is a private nested class that implements the Iterator interface. It performs an in-order
 traversal of the BST and stores the nodes in a list. The hasNext method checks if there are more elements to
 iterate over, and the next method returns the next element in the list.
